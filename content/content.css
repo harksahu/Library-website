@@ -1,0 +1,31 @@
+
+.content_box
+{  
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(112, 111, 108);
+    
+    text-align: center;
+    margin: 5px 50px;
+    
+}
+.content_box h1{
+    font-size: 50px;
+    border-bottom: 2px solid black;
+    border-left-width: 50px;
+}
+
+.yvideo{
+    
+margin: 20px auto;
+border: 2px solid rgb(255, 0, 0);
+
+
+}
+
+.inner_box{
+    background-color: rgb(245, 178, 153);
+    margin: 10px 30px;
+    border: 2px solid rgb(235, 212, 145);
+
+}
