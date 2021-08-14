@@ -1,7 +1,7 @@
-html {
-    scroll-behavior: smooth;
-    background-size: auto;
-  }
+html{
+  scroll-behavior: smooth;
+  background-size: auto;
+}
                                                 /* body */
 body{
     padding: 0px;
@@ -32,6 +32,7 @@ body{
 
         z-index: 2;
     }
+   
     
     .logo{
     
@@ -309,7 +310,6 @@ main{
     background-image: url(image/back1.jpg);
     background-color: aliceblue;
     /* background-repeat: repeat; */
-    
 }
 
 
@@ -386,11 +386,15 @@ main{
     border: 2px solid #58aaf7 ;
     color: #58aaf7;
     width: 270px;
+    transition: all 1s ease-in-out;
 }
 .but:hover{
-    background-color: #58aaf7;
-    color: black;
+  background-color: #58aaf7;
+  color: black;
+  /* animation: harsh 2s ease-in 1 1 reverse alternate; */
+  transform:translateX(15px) ;  
 }
+
 
 
 
@@ -534,6 +538,8 @@ button {
 /* main image  */
 .lib{
     margin: 50px;
+    transition: all 1s ease-in-out;
+
 }
 
 .imgbox{
@@ -549,14 +555,12 @@ button {
 .imgbox:hover{
     box-shadow: 5px 5px 5px  rgb(65, 63, 63);
     cursor: pointer;
-    margin: 15px;    
+    transform: scale(1.1);   
 }
 .imgbox img{
     width: 250px;
 }
-.imgbox img:hover{
-    width: 251.5px;
-}
+
 
 .nname{
     position: absolute;
