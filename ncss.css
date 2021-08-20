@@ -834,13 +834,14 @@ box-shadow: 5px 5px 5px rgb(65, 63, 63);
   }
 
 
-  .size:before {
+  .size::before {
     /* content: "\f16d"; */
     font-size: 35px;
     /* color: ; */
     padding: 5px;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
+    /* size: 35px; */
 }
   
 .copyright{
