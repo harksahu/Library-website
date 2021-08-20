@@ -6,7 +6,8 @@ html{
 body{
     padding: 0px;
     margin: 0px;
-    font-family: 'Padauk', sans-serif;
+    /* font-family: 'Padauk', sans-serif; */
+    font-family: 'Rampart One', cursive;
     background-image: url(image/back1.jpg);
     
 }
@@ -377,6 +378,11 @@ main{
     /* color: white; */
     
 }
+.block4 {
+  background-color: #000000;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
 
 
 .center{
@@ -428,7 +434,7 @@ main{
     text-align: center;
     background-color:white;
     margin: 5px;
-    padding: 125px;
+    padding: 40px;
     flex: 1.5;
 
 
@@ -836,6 +842,14 @@ box-shadow: 5px 5px 5px rgb(65, 63, 63);
    
   .foot{
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+  }
+  .foot div {
+    /* border: 2px solid black; */
+    margin: 2px;
+    color: black;
   }
 
 
@@ -865,4 +879,9 @@ box-shadow: 5px 5px 5px rgb(65, 63, 63);
   position: ;
   align-self: flex-end;
   margin-bottom: -20px;
+}
+
+.copyright a{
+  text-decoration: none;
+  color: white;
 }
