@@ -416,6 +416,11 @@ main{
     color: white;
     font-size: 20px;     
 }
+@media only screen and (max-width: 800px){
+.pcontact{
+  display: none;
+}
+}
 .pcontact img{
     padding-bottom: 15px;
 }
