@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="ncss.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
 </head>
@@ -39,9 +40,9 @@
                 <li class="li"><a href="content.html">Content</a></li>
                 <li class="li"><a href="contact us.html">Contact Us</a></li>
             </ul>
-            <div class="search">
+            <!-- <div class="search">
                 <input type="text" name="nsearch" id="ns" placeholder="Serach Novel">
-            </div>
+            </div> -->
 
     </header>
 
@@ -58,82 +59,120 @@
         </h2>
         <div class="lib">
             <div class="row">
-                <a href="#">
-                    <div class="imgbox">
+                <div class="contaniar">
+                    <div class="imgbox" onclick="hide(richa)">
                         <img src="image/novel.jpg" alt="novel">
-                        <h2 class=" nname">Rich dad</h2>
+                        <h2 class=" nname">Richa</h2>
                     </div>
-                </a>
+
+                    <div id="richa" style="display: none;">
+                        <div id="bar">
+                            <a href="#"><button class="READ">READ</button></a>
+          <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+          <a href="#"><button class="RENT">RENT</button></a>
+                        </div>
+                    </div>
+                </div>
 
 
-                <a href="#">
-                    <div class="imgbox">
+
+                <div class="contaniar">
+                    <div class="imgbox" onclick="hide(rich)">
                         <img src="image/novel.jpg" alt="novel">
-                        <h2 class=" nname">Rich dad</h2>
+                        <h2 class=" nname">Richa</h2>
                     </div>
-                </a>
+
+                    <div id="rich" style="display: none;">
+                        <div id="bar">
+                            <a href="#"><button class="READ">READ</button></a>
+          <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+          <a href="#"><button class="RENT">RENT</button></a>
+                        </div>
+                    </div>
+                </div>
 
 
-                <a href="#">
-                    <div class="imgbox">
+
+                <div class="contaniar">
+                    <div class="imgbox" onclick="hide(rich_dad)">
                         <img src="image/novel.jpg" alt="novel">
-                        <h2 class=" nname">Rich dad</h2>
+                        <h2 class=" nname">Richa</h2>
                     </div>
-                </a>
+
+                    <div id="rich_dad" style="display: none;">
+                        <div id="bar">
+                            <a href="#"><button class="READ">READ</button></a>
+                            <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                            <a href="#"><button class="RENT">RENT</button></a>
+                        </div>
+                    </div>
+                </div>
 
 
-                <a href="#">
-                    <div class="imgbox">
+
+                <div class="contaniar">
+                    <div class="imgbox" onclick="hide(rich_dad1)">
                         <img src="image/novel.jpg" alt="novel">
-                        <h2 class=" nname">Rich dad</h2>
+                        <h2 class=" nname">Richa</h2>
                     </div>
-                </a>
+
+                    <div id="rich_dad1" style="display: none;">
+                        <div id="bar">
+                            <a href="#"><button class="READ">READ</button></a>
+          <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+          <a href="#"><button class="RENT">RENT</button></a>
+                        </div>
+                    </div>
+                </div>
 
 
-                <a href="#">
-                    <div class="imgbox">
+
+                <div class="contaniar">
+                    <div class="imgbox" onclick="hide(rich_dad2)">
                         <img src="image/novel.jpg" alt="novel">
-                        <h2 class=" nname">Rich dad</h2>
+                        <h2 class=" nname">Richa</h2>
                     </div>
-                </a>
 
-
-                <a href="#">
-                    <div class="imgbox">
-                        <img src="image/novel.jpg" alt="novel">
-                        <h2 class=" nname">Rich dad</h2>
+                    <div id="rich_dad2" style="display: none;">
+                        <div id="bar">
+                            <a href="#"><button class="READ">READ</button></a>
+          <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+          <a href="#"><button class="RENT">RENT</button></a>
+                        </div>
                     </div>
-                </a>
+                </div>
 
-
-                <a href="#">
-                    <div class="imgbox">
-                        <img src="image/novel.jpg" alt="novel">
-                        <h2 class=" nname">Rich dad</h2>
-                    </div>
-                </a>
 
 
             </div>
         </div>
-
+        
         <hr class="hr1">
         <br>
     </main>
-
-
+    
 
     <footer class="footer">
         <ul class="center">
-            -:social media:-
-            <br>
-            <a href="work.html">my blog</a>
-            <a href="work.html">instagram</a>
-            <a href="work.html">facebook</a>
-            <a href="work.html">telegam</a>
+            FOLLOW US
+            <div class="foot">
+                <a href="https://www.linkedin.com/in/harsh-sahu-14397a20b/"><i class="fa fa-linkedin size"></i></a>
+                <a href="https://github.com/harksahu"><i class="fa fa-github size"></i></a>
+                <a href="https://www.instagram.com/thoughts_castle/"><i class="fa fa-instagram size"></i></a>
+            </div>
         </ul>
 
     </footer>
+    
+    <p class="center copyright">Copyright © 2021-2022 HarshMonitor.com</p>
+    
+    
+            <script>
+                function hide(idd) {
+                    (idd.style.display != 'none') ? (idd.style.display = 'none') : (idd.style.display = 'block');
+                }
+            </script>
+    
 
 </body>
 

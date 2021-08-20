@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -24,22 +25,23 @@
                 <li class="li"> <a href="index.html" class="active"><span class="material-icons">home</span></a></li>
                 <li class="li"><a href="#Library">Library</a></li>
                 <li class="li"><a href="#Youtube">Video</a></li>
-                <li class="li"><a href="#Contact">Content</a></li>
-                <li class="li"><a href="contact us.html">Contact Us</a></li>
+                <li class="li"><a href="#Content">Content</a></li>
+                <li class="li"><a href="#contact-us">Contact Us</a></li>
             </ul>
 
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <div class="block1 center" id="Library" style="background-image: url(image/123.jpg);">
             <div>
                 <h1 class="blockhead">Library</h1>
                 <p class="blockpara">Lorem ipsum dolor, sit amet consectetur adipisicing tempora quis! Ducimus non
                     maxime, natus qui nobis placeat sapiente dolores voluptate quo laudantium!</p>
-                <a href="Library.html"><button class="but">Lets Go >></button></a>
-            </div>
-
+                    <a href="Library.html"><button class="but">Lets Go >></button></a>
+                </div>
+                
+                <!-- <img src="https://opendoodles.s3-us-west-1.amazonaws.com/laying.png" alt="" id="doddle" > -->
         </div>
         <div class="block2 center" id="Youtube" style="background-image:url(image/you.jpg);">
 
@@ -53,7 +55,7 @@
 
         </div>
 
-        <div class="block3 center" id="Contact" style="background-image: url(image/pro1.jpg);">
+        <div class="block3 center" id="Content" style="background-image: url(image/pro1.jpg);">
             <div>
                 <h1 class="blockhead">Program</h1>
                 <p class="blockpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore quis
@@ -66,21 +68,46 @@
 
         </div>
 
+        
+
+        <div class="block4 center" id="contact-us" style="background-image: url();">
+            <div class="contact">
+            
+                <p class="pcontact">
+                    <img src="/image/message.png" alt="message" width="300"><br>
+                    If you have any quetions or just want to get in touch use the form below. We look forward to hearing from you!
+                </p>
+                <div class="cform">
+                    <h1>Contact US</h1>
+                    <form form action="https://formsubmit.co/harshmonitor@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New submission!">
+                        <input type="text" name="name" id="name" placeholder="Your name" required><br>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                        <input type="email" name="email_id" id="email_id" placeholder="User Email" required><br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea><br>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+    
+
+        </div>
+
+        
     </main>
 
     <footer class="footer">
         <ul class="center">
-            -:social media:-
-            <br>
-            <a href="work.html">my blog</a>
-            <a href="work.html">instagram</a>
-            <a href="work.html">facebook</a>
-            <a href="work.html">telegam</a>
+            FOLLOW US
+            <div class="foot">
+                <a href="https://www.linkedin.com/in/harsh-sahu-14397a20b/"><i class="fa fa-linkedin size"></i></a>
+                <a href="https://github.com/harksahu"><i class="fa fa-github size"></i></a>
+                <a href="https://www.instagram.com/thoughts_castle/"><i class="fa fa-instagram size"></i></a>
+            </div>
         </ul>
 
     </footer>
 
-
+    <p class="center copyright">Copyright © 2021-2022 HarshMonitor.com</p>
 
 
 
