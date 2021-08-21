@@ -5,14 +5,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/jpg" href="/image/favicon_io/favicon.ico" />
+
     <link rel="stylesheet" href="ncss.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+/* 
+::-webkit-scrollbar {
+  width: 20px;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: #58aaf7; 
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+} */
+        .block1 .main-row {
+            display: flex;
+            justify-content: center;
+            overflow: scroll;
+        }
 
+        .block1 .lib {
+            margin: 25px;
+            /* border: 2px solid black; */
+            transition: all 1s ease-in-out;
+
+        }
+
+        .block1 .imgbox {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin: 20px;
+
+
+        }
+
+        .block1 .imgbox:hover {
+            box-shadow: 3px 3px 3px rgb(65, 63, 63);
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .block1 .imgbox img {
+            width: 100px;
+
+        }
+
+        .block1 .nname {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgb(247, 243, 243);
+            background: rgba(44, 41, 41, 0.5);
+            color: #000000;
+            /* Grey text */
+            padding: 5px;
+            font-size: medium;
+            border-radius: 5px;
+
+        }
+
+        .block1 .contaniar {
+            display: flex;
+            /* border: 2px solid black; */
+            padding: 0;
+            align-items: center;
+            margin: 10px;
+
+        }
+
+        .block1 .contaniar:hover {
+            transform: scale(1.1);
+
+        }
+
+        .block1 #bar {
+            margin-left: -10px;
+            /* border: 2px solid black; */
+            margin-top: -10px;
+        }
+
+        .block1 #bar button {
+            display: block;
+            border-radius: 20px;
+            transform: rotate(90deg);
+            margin-top: 20px;
+            font-size: small;
+
+        }
+
+        .block1 #bar a {
+            text-decoration: none;
+
+        }
+
+        .block1 .READ {
+            margin-bottom: 50px;
+            margin-left: -11px;
+            width: 100%;
+            background-color: #58aaf7;
+
+
+        }
+
+        .block1 .READ:hover {
+            box-shadow: 3px 3px 3px rgb(65, 63, 63);
+            background-color: #2a8ce7;
+        }
+
+        .block1 .PURCHASE {
+            margin-bottom: 50px;
+            width: 170%;
+            margin-left: -31px;
+            background-color: rgb(247, 72, 72);
+
+        }
+
+        .block1 .PURCHASE:hover {
+            box-shadow: 3px 3px 3px rgb(65, 63, 63);
+            background-color: rgb(241, 47, 47);
+
+        }
+
+        .block1 .RENT {
+            margin-top: 50px;
+            margin-left: -11px;
+            width: 100%;
+
+        }
+
+        .block1 .RENT:hover {
+            box-shadow: 3px 3px 3px rgb(65, 63, 63);
+
+        }
+    </style>
 </head>
 
 <body>
@@ -36,14 +176,230 @@
 
     <main class="main">
         <div class="block1 center" id="Library" style="background-image: url(image/123.jpg);">
-            <div>
+            <div class="lib-block">
                 <h1 class="blockhead">Library</h1>
                 <p class="blockpara">Lorem ipsum dolor, sit amet consectetur adipisicing tempora quis! Ducimus non
                     maxime, natus qui nobis placeat sapiente dolores voluptate quo laudantium!</p>
-                    <a href="Library.html"><button class="but">Lets Go >></button></a>
+                <a href="Library.html"><button class="but">Lets Go >></button></a>
+            </div>
+
+            <div class="lib">
+                <h2 class="center heading">Popular Books </h2>
+                <div class="main-row">
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(richa)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="richa" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(rich)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="rich" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(rich_dad)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="rich_dad" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(rich_dad1)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="rich_dad1" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(rich_dad2)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="rich_dad2" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(rich_dad3)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="rich_dad3" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(rich_dad4)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="rich_dad4" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(rich_dad5)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="rich_dad5" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(rich_dad6)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="rich_dad6" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(rich_dad7)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="rich_dad7" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(rich_dad8)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="rich_dad8" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="contaniar">
+                        <div class="imgbox" onclick="hide(rich_dad9)">
+                            <img src="image/novel.jpg" alt="novel">
+                            <h2 class=" nname">Richa</h2>
+                        </div>
+    
+                        <div id="rich_dad9" style="display: none;">
+                            <div id="bar">
+                                <a href="#"><button class="READ">READ</button></a>
+                                <a href="#"><button class="PURCHASE">PURCHASE</button></a>
+                                <a href="#"><button class="RENT">RENT</button></a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
                 </div>
-                
-                <!-- <img src="https://opendoodles.s3-us-west-1.amazonaws.com/laying.png" alt="" id="doddle" > -->
+            </div>
+
+
+            <!-- <img src="https://opendoodles.s3-us-west-1.amazonaws.com/laying.png" alt="" id="doddle" > -->
         </div>
         <div class="block2 center" id="Youtube" style="background-image:url(image/you.jpg);">
 
@@ -60,8 +416,10 @@
         <div class="block3 center" id="Content" style="background-image: url(image/pro1.jpg);">
             <div>
                 <h1 class="blockhead">Program</h1>
-                <p class="blockpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore quis
-                    quod, assumenda nostrum laborum natus iste ducimus fuga excepturi reprehenderit blanditiis expedita
+                <p class="blockpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore
+                    quis
+                    quod, assumenda nostrum laborum natus iste ducimus fuga excepturi reprehenderit blanditiis
+                    expedita
                     similique exercitationem.
 
                 </p>
@@ -70,14 +428,16 @@
 
         </div>
 
-        
+
 
         <div class="block4 center" id="contact-us" style="background-image: url();">
             <div class="contact">
-            
+
                 <p class="pcontact">
                     <img src="/image/message.png" alt="message" width="300"><br>
-                    If you have any quetions or just want to get in touch use the form below. We look forward to hearing from you!
+                    If you have any quetions or just want to get in touch use the form below. We look forward to
+                    hearing
+                    from you!
                 </p>
                 <div class="cform">
                     <h1>Contact US</h1>
@@ -86,41 +446,49 @@
                         <input type="text" name="name" id="name" placeholder="Your name" required><br>
                         <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
                         <input type="email" name="email_id" id="email_id" placeholder="User Email" required><br>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea><br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
+                            required></textarea><br>
                         <button type="submit">Send</button>
                     </form>
                 </div>
-    
 
+
+            </div>
         </div>
 
-        
     </main>
 
     <footer class="footer">
         <ul class="center">
             FOLLOW US
             <div class="foot">
-                <a href="https://www.linkedin.com/in/harsh-sahu-14397a20b/">
+                <a href="https://www.youtube.com/channel/UCL1h3tj4JX2JYzDTFpLzryA/videos">
                     <div>
-                        <i class="fa fa-linkedin size"></i>
-                        <p>linkedin</p>
+                        <i class="fa fa-youtube size"></i>
+                        <p>Youtube</p>
                     </div>
                 </a>
-                <a href="https://github.com/harksahu">
-                    <div>
-                        <i class="fa fa-github size"></i>
-                        <p>github</p>
+                <div class="foot">
+                    <a href="https://www.linkedin.com/in/harsh-sahu-14397a20b/">
+                        <div>
+                            <i class="fa fa-linkedin size"></i>
+                            <p>linkedin</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/harksahu">
+                        <div>
+                            <i class="fa fa-github size"></i>
+                            <p>github</p>
 
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/thoughts_castle/">
-                    <div>
-                        <i class="fa fa-instagram size"></i>
-                        <p>instagram</p>
-                    </div>
-                </a>
-            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/thoughts_castle/">
+                        <div>
+                            <i class="fa fa-instagram size"></i>
+                            <p>instagram</p>
+                        </div>
+                    </a>
+                </div>
         </ul>
 
     </footer>
@@ -128,6 +496,12 @@
     <p class="center copyright">Copyright © 2021 <a href="index.html">Harsh Monitor</a></p>
 
 
+
+    <script>
+        function hide(idd) {
+            (idd.style.display != 'none') ? (idd.style.display = 'none') : (idd.style.display = 'block');
+        }
+    </script>
 
 
 

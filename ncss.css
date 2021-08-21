@@ -339,10 +339,13 @@ main{
   .block1{
     padding: 20px;
     margin:  0px;
-    display: flex;
     background-repeat: no-repeat;
     background-size:cover;
     height: 100vh;
+    /* display: flex; */
+}
+.lib-block{
+
 }
 .block1 div{
     margin: auto;
@@ -353,7 +356,7 @@ main{
     
     padding: 20px;
     margin:  0px;
-    display: flex;
+    /* display: flex; */
     background-repeat: no-repeat;
     background-size:cover;
     height: 100vh;
@@ -367,7 +370,7 @@ main{
 .block3{
     padding: 20px;
     margin:  0px;
-    display: flex;
+    /* display: flex; */
     background-repeat: no-repeat;
     background-size:cover;
     height: 100vh;
@@ -572,7 +575,7 @@ button {
   .imgbox:hover{
     box-shadow: 5px 5px 5px  rgb(65, 63, 63);
     cursor: pointer;
-    transform: scale(1.1);   
+    /* transform: scale(1.1);    */
   }
 
 .imgbox img{
@@ -875,8 +878,6 @@ box-shadow: 5px 5px 5px rgb(65, 63, 63);
 #doddle{
   width: 20%;
   height: 20%;
-  /* display: ; */
-  position: ;
   align-self: flex-end;
   margin-bottom: -20px;
 }
